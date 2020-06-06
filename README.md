@@ -5,7 +5,7 @@ that allows users to send anonymous reports on modern slavery, child trafficking
 
 ## About
 
-![COGNITO](user1.png)
+![COGNITO](./user1.png)
 
 COGNITO is only but one part of the general proposed solution towards the SDG Goal 8 Problem Statement 1.
 The app is currently web based and will be optimised for mobile viewing in future updates.
