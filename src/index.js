@@ -1,11 +1,18 @@
-import app from './app';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import { BrowserRouter } from "react-router-dom";
 
-const startApp = async () => {
-  const header = document.querySelector('[data-app-name]');
-  if (!header) return;
 
-  const programName = await app();
-  header.textContent = programName;
-};
+ReactDOM.render(
+  <BrowserRouter>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 
-document.addEventListener('DOMContentLoaded', startApp);
+
+
