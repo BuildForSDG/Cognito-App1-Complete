@@ -1,49 +1,55 @@
 {
-  "name": "js-starter",
-  "version": "0.0.1",
-  "description": "A boilerplate for starting js code",
-  "keywords": [
-    "js-starter",
-    "boilerplate"
-  ],
-  "private": false,
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "directories": {
-    "test": "__tests__"
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.55",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "jsonfile": "^6.0.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.18",
+    "mysql": "^2.18.1",
+    "noty": "^3.2.0-beta",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cover": "jest --coverage",
-    "lint": "eslint \"src/**/*.js\"",
-    "start": "parcel ./src/index.html"
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": {
-    "name": "Build For SDG",
-    "email": "buildforsdg@andela.com"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "homepage": "https://github.com/BuildForSDG/js-starter#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BuildForSDG/js-starter.git"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "bugs": {
-    "url": "https://github.com/BuildForSDG/js-starter/issues"
-  },
-  "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "babel-jest": "^25.4.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "jest": "^25.4.0",
-    "parcel-bundler": "^1.12.4"
-  },
-  "browserslist": [
-    "last 1 Chrome versions"
-  ]
+    "@types/express": "^4.17.6"
+  }
 }
